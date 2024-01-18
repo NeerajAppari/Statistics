@@ -1,0 +1,78 @@
+
+practical 5
+aim:frequency distribution using cut and table function 
+> x<-stats::mom(1000)
+
+> x
+
+output
+
+c<cut-(x,breaks=-5.5)
+c
+
+output
+table(c)
+c
+
+output
+
+practcal 6
+aim:summary staticts
+
+wieghts=c((values)54,46,45,45,34,45,45,34,45,45)
+summary (weigths)
+output
+
+practical 7
+aim:skewness and kurtosis
+
+weights=c(values)
+library(moments)
+skewness(weights)
+output
+
+prcatical 8
+aim:plot properties of co realation regression
+x<-(sample(10:20,20)2)+rnorm(10,sd=2)
+x<-x+rnorm(10,sd=2)
+z<-(sample(1:20,20)2)+rnorm(20,sd=5)
+df<-data.frame(x,y,z)
+plot(df[,1:3])
+
+practical 9
+aim:probability
+library(prob)
+
+tosscoin(1)
+output
+
+tosscoin(6)
+output
+
+head(cards())
+output
+
+pnorm(q=90,mean=70,sd=15,lower.tail=FALSE)
+output
+
+practical 10
+aim:conditional probablity
+urnsamples(1:3,size=2,replace=TRUE,ordered=TRUE)
+output
+
+S<-tosscoin(2,makespace=TRUE)
+S[1:3,]
+output
+
+S<-cards()
+subset(S,suit+"Heart")
+output
+
+subset(S,rank%in%7.9)
+output
+
+subset(rolldie(3),X1+X2+X3>16)
+output
+
+S=cards()
+A=subset(S,suit="Heart")
